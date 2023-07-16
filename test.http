@@ -1,0 +1,31 @@
+
+GET http://localhost:8080/courses
+
+###
+
+GET http://localhost:8080/courses/145
+
+###
+
+POST http://localhost:8080/courses
+Content-Type: application/json
+
+{
+  "id": 175,
+  "title": "python",
+  "description": "This course will teach python"
+}
+
+###
+
+DELETE http://localhost:8080/courses/175
+
+###
+PUT http://localhost:8080/courses
+Content-Type: application/json
+
+{
+    "id": 145,
+    "title": "javascript",
+    "description": "This course will teach javascript"
+}
